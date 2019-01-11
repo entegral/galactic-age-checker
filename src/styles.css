@@ -3,8 +3,34 @@
   margin-top: 5px;
 }
 
+.results {
+  width: 33%;
+  display: block;
+  float: left;
+  margin: 10px;
+}
+
 #outputDay {
   color: teal;
   font-family: sans-serif;
 
+}
+.mercury {
+  background-color: orange;
+}
+
+.venus {
+  background-color: green;
+}
+
+.earth {
+  background-color: blue;
+}
+
+.mars {
+  background-color: red;
+}
+
+.jupiter {
+  background-color: grey;
 }

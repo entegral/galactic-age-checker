@@ -6,9 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
 
-  $("#result").hide();
+  $(".results").hide();
 
-  $("#userAgeForm").submit(function(event) {
+  $("#userForm").submit(function(event) {
     event.preventDefault();
 
     let params = {};
@@ -22,7 +22,16 @@ $(document).ready(function() {
 
     user = new User(params);
 
+    let planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter'];
 
+    planets.forEach(function(planet){
+      let ageSelector = '.' + planet + ' div .age';
+      let lifeSelector = '.' + planet + ' div .life';
+      $(lifeSelector).text(user.calculateSpecificLifeExpectancy(planet));
+      $(ageSelector).text(user.calculateSpecificPlanetaryAge(planet));
+    });
+
+    $('.results').show();
 
 
 

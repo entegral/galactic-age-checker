@@ -1,70 +1,125 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Date Checker</title>
 </head>
+
 <body>
+
   <div class="container">
 
-    <div class="container">
-      <div class="card">
-        <h2 class="card-header">Galactic Age Checker</h2>
-        <div class="card-body">
-          <div class="form-group">
-            <form id="userAgeForm">
+    <div class="row">
+      <div class="col-3">
 
-              <div class="form-group">
-                <label for="dob">Date-of-Birth (Earth-Date)</label>
-                <input type="date" class="form-control"  id="dob" required>
-              </div>
+        <div class="card">
+          <h2 class="card-header">Galactic Age Checker</h2>
+          <div class="card-body">
+            <div class="form-group">
+              <form id="userForm">
 
-              <div class="form-group">
-                <label for="gender">Gender</label>
-                <select class="form-control" id="gender">
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
+                <div class="form-group">
+                  <label for="dob">Date-of-Birth (Earth-Date)</label>
+                  <input type="date" class="form-control" id="dob" required>
+                </div>
 
-              <div class="form-group">
-                <label for="poorFamilyHealth">Family Health History</label>
-                <select class="form-control" id="poorFamilyHealth">
-                  <option value=false>No history of health conditions</option>
-                  <option value=true>Have history of health conditions</option>
-                </select>
-              </div>
+                <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select class="form-control" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
 
-              <div class="form-group">
-                <label for="married">Marital Status</label>
-                <select class="form-control" id="married">
-                  <option value=true>Married</option>
-                  <option value=false>Not-married</option>
-                </select>
-              </div>
+                <div class="form-group">
+                  <label for="poorFamilyHealth">Family Health History</label>
+                  <select class="form-control" id="poorFamilyHealth">
+                    <option value=false>No history of health conditions</option>
+                    <option value=true>Have history of health conditions</option>
+                  </select>
+                </div>
 
-              <div class="form-group">
-                <label for="activeLifestyle">Lifestyle</label>
-                <select class="form-control" id="activeLifestyle">
-                  <option value=true>Highly Active</option>
-                  <option value=false>Not Highly Active</option>
-                </select>
-              </div>
+                <div class="form-group">
+                  <label for="married">Marital Status</label>
+                  <select class="form-control" id="married">
+                    <option value=true>Married</option>
+                    <option value=false>Not-married</option>
+                  </select>
+                </div>
 
-              <button type="submit" name="button" class="btn btn-warning">Get Galactic Ages!</button>
-            </form>
+                <div class="form-group">
+                  <label for="activeLifestyle">Lifestyle</label>
+                  <select class="form-control" id="activeLifestyle">
+                    <option value=true>Highly Active</option>
+                    <option value=false>Not Highly Active</option>
+                  </select>
+                </div>
+
+                <button type="submit" name="button" class="btn btn-warning">Get Galactic Ages!</button>
+              </form>
+            </div>
           </div>
         </div>
+
       </div>
 
-      <div class="card" id="result">
-        <div class="card-body">
-          <h2 class="card-header">Galactic Age Statistics</h2>
-          <h3><span id="inputDate"></span></h3>
-          <h2><span id="outputDay"></span></h2>
+      <div class="col-8">
+
+        <div class="card results mercury">
+          <h5 class="card-header">Your Mercurial Age and Life Expectancy</h5>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Your current age on this planet:</h6>
+            <p class="age"></p>
+            <h6 class="card-subtitle mb-2 text-muted">Your current life expectancy on this planet:</h6>
+            <p class="life"></p>
+          </div>
         </div>
-      </div>
 
+        <div class="card results venus">
+          <h5 class="card-header">Your Venusian Age and Life Expectancy</h5>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Your current age on this planet:</h6>
+            <p class="age"></p>
+            <h6 class="card-subtitle mb-2 text-muted">Your current life expectancy on this planet:</h6>
+            <p class="life"></p>
+          </div>
+        </div>
+
+        <div class="card results earth">
+          <h5 class="card-header">Your Earthan Age and Life Expectancy</h5>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Your current age on this planet:</h6>
+            <p class="age"></p>
+            <h6 class="card-subtitle mb-2 text-muted">Your current life expectancy on this planet:</h6>
+            <p class="life"></p>
+          </div>
+        </div>
+
+        <div class="card results mars">
+          <h5 class="card-header">Your Martian Age and Life Expectancy</h5>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Your current age on this planet:</h6>
+            <p class="age"></p>
+            <h6 class="card-subtitle mb-2 text-muted">Your current life expectancy on this planet:</h6>
+            <p class="life"></p>
+          </div>
+        </div>
+
+        <div class="card results jupiter">
+          <h5 class="card-header">Your Jupitorian Age and Life Expectancy</h5>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Your current age on this planet:</h6>
+            <p class="age"></p>
+            <h6 class="card-subtitle mb-2 text-muted">Your current life expectancy on this planet:</h6>
+            <p class="life"></p>
+          </div>
+        </div>
+
+
+      </div>
     </div>
+
   </div>
 </body>
+
 </html>
