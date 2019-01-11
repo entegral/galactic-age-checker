@@ -1,9 +1,15 @@
 export class User {
   constructor(dob){
     this.dob = new Date(dob);
+    this.earthAge = this.calculateEarthAge();
+    this.mercurialAge = this.earthAge / 0.24;
+    this.venusianAge = this.earthAge / 0.62;
+    this.martianAge = this.earthAge / 1.88;
+    this.jupitorianAge = this.earthAge / 11.86;
+
   }
 
-  earthAge(){
+  calculateEarthAge(){
     let currentTime = new Date();
     let yearDifference = currentTime.getFullYear() - this.dob.getFullYear();
 
@@ -14,19 +20,5 @@ export class User {
     }
   }
 
-  mercurialAge(){
-    return this.earthAge() / 0.24;
-  }
 
-  venusianAge(){
-    return this.earthAge() / 0.62;
-  }
-
-  martianAge(){
-    return this.earthAge() / 1.88;
-  }
-
-  jupitorianAge(){
-    return this.earthAge() / 11.86;
-  }
 }
