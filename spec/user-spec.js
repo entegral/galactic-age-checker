@@ -1,4 +1,4 @@
-import { User } from '../src/user.js'
+import { User } from '../src/user.js';
 
 describe ('DateChecker', function() {
 
@@ -28,6 +28,11 @@ describe ('DateChecker', function() {
   it('should calculate a persons age in martian years (1 mars year = 1.88 earth years)', function(){
     expect(user1.martianAge()).toEqual(30/1.88);
     expect(user2.martianAge()).toEqual(31/1.88);
+  });
+
+  it('should calculate a persons age in jupiter years (1 mars year = 11.86 earth years)', function(){
+    expect(user1.jupitorianAge()).toEqual(30/11.86);
+    expect(user2.jupitorianAge()).toEqual(31/11.86);
   });
 
 });
