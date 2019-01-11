@@ -23,7 +23,7 @@ export class User {
   }
 
   martianAge(){
-    
+    return this.earthAge() / 1.88;
   }
 
 }
