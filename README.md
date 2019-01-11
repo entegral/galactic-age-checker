@@ -8,22 +8,22 @@
 
 * In the command line, clone this repository with
 ```
-$ git clone
+git clone
 ```
 
 * Navigate into the directory and use command
   ```
-  $ npm install
-  $ ./node_modules/.bin/jasmine init
-  $ karma init
+  npm install
+  ./node_modules/.bin/jasmine init
+  karma init
   ```
 * To open the application in Chrome, use command
 ```
-$ npm run start
+npm run start
 ```
 * To run the test suite, use command
 ```
-$ npm test
+npm test
 ```
 
 ## Known Bugs
