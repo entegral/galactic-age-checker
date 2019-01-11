@@ -18,9 +18,11 @@ describe ('DateChecker', function() {
   it('should calculate a persons age in mercury years (1 mercury year = 0.24 earth years)', function(){
     expect(user1.mercurialAge()).toEqual(30/0.24);
     expect(user2.mercurialAge()).toEqual(31/0.24);
-
   });
 
-
+  it('should calculate a persons age in venusian years (1 venus year = 0.62 earth years)', function(){
+    expect(user1.venusianAge()).toEqual(30/0.62);
+    expect(user2.venusianAge()).toEqual(31/0.62);
+  });
 
 });
