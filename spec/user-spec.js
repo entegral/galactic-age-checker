@@ -69,8 +69,8 @@ describe ('DateChecker', function() {
 
   it('should calculate a person\'s life expectancy in jupitorian years', function (){
     let planetaryYearModifier = 11.86;
-    expect(user1.venusianLifeExpectancy).toEqual(76*0.75*0.75/planetaryYearModifier);
-    expect(user2.venusianLifeExpectancy).toEqual((76+5)*1.1*1.1/planetaryYearModifier);
+    expect(user1.jupitorianLifeExpectancy).toEqual(76*0.75*0.75/planetaryYearModifier);
+    expect(user2.jupitorianLifeExpectancy).toEqual((76+5)*1.1*1.1/planetaryYearModifier);
   });
 
 
