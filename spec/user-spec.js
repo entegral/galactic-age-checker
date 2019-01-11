@@ -3,11 +3,15 @@ import { User } from '../src/user.js';
 describe ('DateChecker', function() {
 
   let user1;
+  let parameters1 = {dob:"1988-01-29", gender: "male", poorFamilyHealth: true, married: false, activeLifestyle: false};
   let user2;
+  let parameters2 = {dob:"1988-01-09", gender: "female", poorFamilyHealth: false, married: true, activeLifestyle: true};
+
+
 
   beforeEach(function() {
-    user1 = new User("1988-01-29");
-    user2 = new User("1988-01-09");
+    user1 = new User(parameters1);
+    user2 = new User(parameters2);
   });
 
   it('should calculate a persons current Earth age based on their given earth DOB and today\'s earth date', function (){
@@ -40,9 +44,10 @@ describe ('DateChecker', function() {
     expect(user2.earthAge).toEqual(31);
   });
 
-  // it('should calculate a persons current Earthan-years life expectancy based upon specific factors', function (){
-  //   expect(user1.earthAge).toEqual(30);
-  //   expect(user2.earthAge).toEqual(31);
-  // });
+  it('should calculate a persons current Earthan-years life expectancy based upon specific factors', function (){
+
+    expect(user1.earthanLifeExpectancy).toEqual(70);
+    expect(user2.earthanLifeExpectancy).toEqual(70);
+  });
 
 });
