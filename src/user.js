@@ -14,6 +14,8 @@ export class User {
     }
   }
 
-
+  mercurialAge(){
+    
+  }
 
 }
