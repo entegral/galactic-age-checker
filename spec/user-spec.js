@@ -61,6 +61,12 @@ describe ('DateChecker', function() {
     expect(user2.venusianLifeExpectancy).toEqual((76+5)*1.1*1.1/planetaryYearModifier);
   });
 
+  it('should calculate a person\'s life expectancy in martian years', function (){
+    let planetaryYearModifier = 1.88;
+    expect(user1.martianLifeExpectancy).toEqual(76*0.75*0.75/planetaryYearModifier);
+    expect(user2.martianLifeExpectancy).toEqual((76+5)*1.1*1.1/planetaryYearModifier);
+  });
+
 
 
 
