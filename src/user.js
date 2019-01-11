@@ -15,7 +15,7 @@ export class User {
   }
 
   mercurialAge(){
-    
+    return this.earthAge() / 0.24;
   }
 
 }
