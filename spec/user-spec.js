@@ -30,7 +30,7 @@ describe ('DateChecker', function() {
     expect(user2.martianAge()).toEqual(31/1.88);
   });
 
-  it('should calculate a persons age in jupiter years (1 mars year = 11.86 earth years)', function(){
+  it('should calculate a persons age in jupitorian years (1 mars year = 11.86 earth years)', function(){
     expect(user1.jupitorianAge()).toEqual(30/11.86);
     expect(user2.jupitorianAge()).toEqual(31/11.86);
   });

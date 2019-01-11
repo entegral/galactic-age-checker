@@ -27,6 +27,6 @@ export class User {
   }
 
   jupitorianAge(){
-    
+    return this.earthAge() / 11.86;
   }
 }
