@@ -45,9 +45,16 @@ describe ('DateChecker', function() {
   });
 
   it('should calculate a persons current Earthan-years life expectancy based upon specific factors', function (){
-
     expect(user1.earthanLifeExpectancy).toEqual(76*0.75*0.75);
     expect(user2.earthanLifeExpectancy).toEqual((76+5)*1.1*1.1);
   });
+
+  it('should calculate a person\'s life expectancy in mercurial years', function (){
+    let planetaryYearModifier = 0.24;
+    expect(user1.mercurialLifeExpectancy).toEqual(76*0.75*0.75/planetaryYearModifier);
+    expect(user2.mercurialLifeExpectancy).toEqual((76+5)*1.1*1.1/planetaryYearModifier);
+  });
+
+
 
 });
