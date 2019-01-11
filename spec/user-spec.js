@@ -25,4 +25,9 @@ describe ('DateChecker', function() {
     expect(user2.venusianAge()).toEqual(31/0.62);
   });
 
+  it('should calculate a persons age in martian years (1 mars year = 1.88 earth years)', function(){
+    expect(user1.martianAge()).toEqual(30/1.88);
+    expect(user2.martianAge()).toEqual(31/1.88);
+  });
+
 });
