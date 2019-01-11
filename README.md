@@ -1,4 +1,4 @@
-## Date Checker App
+## Galactic Age Calculator
 
 #### By Robert Bruce
 
