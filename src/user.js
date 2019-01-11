@@ -19,6 +19,7 @@ export class User {
   }
 
   venusianAge(){
+    return this.earthAge() / 0.62;
   }
 
 }
