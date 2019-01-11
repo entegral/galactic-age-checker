@@ -46,8 +46,8 @@ describe ('DateChecker', function() {
 
   it('should calculate a persons current Earthan-years life expectancy based upon specific factors', function (){
 
-    expect(user1.earthanLifeExpectancy).toEqual(70);
-    expect(user2.earthanLifeExpectancy).toEqual(70);
+    expect(user1.earthanLifeExpectancy).toEqual(76*0.75*0.75);
+    expect(user2.earthanLifeExpectancy).toEqual((76+5)*1.1*1.1);
   });
 
 });

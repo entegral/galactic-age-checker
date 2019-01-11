@@ -40,14 +40,14 @@ export class User {
   }
 
   calculateEarthanLifeExpectancy(){
-    // let lifeExpectancy = 76;
-    //
-    // this.gender == "male" ? null : lifeExpectancy += 5;
-    // this.poorFamilyHealth == true ? lifeExpectancy *= 0.75 : null;
-    // this.married == true ? lifeExpectancy *= 1.1 : null;
-    // this.activeLifestyle == true ? lifeExpectancy *= 1.1 : lifeExpectancy *= 0.75;
-    //
-    // return lifeExpectancy;
+    let lifeExpectancy = 76;
+
+    this.gender == "male" ? null : lifeExpectancy += 5;
+    this.poorFamilyHealth == true ? lifeExpectancy *= 0.75 : null;
+    this.married == true ? lifeExpectancy *= 1.1 : null;
+    this.activeLifestyle == true ? lifeExpectancy *= 1.1 : lifeExpectancy *= 0.75;
+
+    return lifeExpectancy;
 
   }
 
