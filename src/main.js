@@ -10,9 +10,20 @@ $(document).ready(function() {
 
   $("#userAgeForm").submit(function(event) {
     event.preventDefault();
-    let dob = $("#dob").val();
 
-    let user = new User(dob);
+    let params = {};
+    let user;
+
+    params.dob = $("#dob").val();
+    params.gender = $("#gender").val();
+    params.poorFamilyHealth = $("#poorFamilyHealth").val();
+    params.married = $("#married").val();
+    params.activeLifestyle = $("#activeLifestyle").val();
+
+    user = new User(params);
+
+
+
 
 
 
