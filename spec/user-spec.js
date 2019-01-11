@@ -40,4 +40,9 @@ describe ('DateChecker', function() {
     expect(user2.earthAge).toEqual(31);
   });
 
+  // it('should calculate a persons current Earthan-years life expectancy based upon specific factors', function (){
+  //   expect(user1.earthAge).toEqual(30);
+  //   expect(user2.earthAge).toEqual(31);
+  // });
+
 });

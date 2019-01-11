@@ -1,12 +1,20 @@
 export class User {
-  constructor(dob){
-    this.dob = new Date(dob);
+  constructor(formInput){
+    if (formInput.length > 4) {
+      this.dob = new Date(formInput);
+    } else {
+      let newDate = new Date();
+      let birthYear = newDate.getFullYear() - formInput;
+      this.dob = newDate.setFullYear(birthYear);
+    }
+
     this.earthAge = this.calculateEarthAge();
     this.mercurialAge = this.earthAge / 0.24;
     this.venusianAge = this.earthAge / 0.62;
     this.martianAge = this.earthAge / 1.88;
     this.jupitorianAge = this.earthAge / 11.86;
 
+    // this.earthYearLifeExpectancy = this.calculateEarthanLifeExpetancy();
   }
 
   calculateEarthAge(){
@@ -20,5 +28,8 @@ export class User {
     }
   }
 
+  // calculateEarthanLifeExpetancy(){
+  //
+  // }
 
 }
