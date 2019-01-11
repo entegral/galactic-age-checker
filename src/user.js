@@ -23,7 +23,7 @@ export class User {
     this.earthanLifeExpectancy = this.calculateEarthanLifeExpectancy();
     this.mercurialLifeExpectancy = this.earthanLifeExpectancy / 0.24;
     this.venusianLifeExpectancy = this.earthanLifeExpectancy / 0.62;
-    // this.martianLifeExpectancy = this.earthanLifeExpectancy / 1.88;
+    this.martianLifeExpectancy = this.earthanLifeExpectancy / 1.88;
     // this.jupitorianLifeExpectancy = this.earthanLifeExpectancy / 11.86;
 
   }
