@@ -9,22 +9,13 @@ export class User {
       this.dob = newDate.setFullYear(birthYear);
     }
 
-    this.earthAge = this.calculateEarthAge();
-    this.mercurialAge = this.earthAge / 0.24;
-    this.venusianAge = this.earthAge / 0.62;
-    this.martianAge = this.earthAge / 1.88;
-    this.jupitorianAge = this.earthAge / 11.86;
-
     this.gender = formInput.gender;
     this.poorFamilyHealth = formInput.poorFamilyHealth;
     this.married = formInput.married;
     this.activeLifestyle = formInput.activeLifestyle;
 
+    this.earthAge = this.calculateEarthAge();
     this.earthanLifeExpectancy = this.calculateEarthanLifeExpectancy();
-    this.mercurialLifeExpectancy = this.earthanLifeExpectancy / 0.24;
-    this.venusianLifeExpectancy = this.earthanLifeExpectancy / 0.62;
-    this.martianLifeExpectancy = this.earthanLifeExpectancy / 1.88;
-    this.jupitorianLifeExpectancy = this.earthanLifeExpectancy / 11.86;
 
   }
 
