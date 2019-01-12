@@ -6,7 +6,9 @@ export class User {
     else {
       let newDate = new Date();
       let birthYear = newDate.getFullYear() - formInput.age;
-      this.dob = newDate.setFullYear(birthYear);
+      newDate.setFullYear(birthYear);
+      console.log(newDate.getFullYear());
+      this.dob = newDate;
     }
 
     this.gender = formInput.gender;

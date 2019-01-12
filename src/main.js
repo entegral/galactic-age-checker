@@ -6,7 +6,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
 
+
   $(".results").hide();
+  $("#ageInput").hide();
+
+  $("#useAge").click(function(){
+    $("#dobInput").slideUp();
+    $("#ageInput").slideDown();
+  });
+
+  $("#useDOB").click(function(){
+    $("#dobInput").slideDown();
+    $("#ageInput").slideUp();
+  });
 
   $("#userForm").submit(function(event) {
     event.preventDefault();
@@ -15,6 +27,7 @@ $(document).ready(function() {
     let user;
 
     params.dob = $("#dob").val();
+    params.age = $("#age").val();
     params.gender = $("#gender").val();
     params.poorFamilyHealth = $("#poorFamilyHealth").val();
     params.married = $("#married").val();

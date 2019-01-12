@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Date Checker</title>
+  <title>Galactic Age Calculator</title>
 </head>
 
 <body>
@@ -15,13 +15,25 @@
         <div class="card">
           <h2 class="card-header">Galactic Age Checker</h2>
           <div class="card-body">
-            <div class="form-group">
+
+            <button href="#" class="btn btn-primary" id="useAge">Use Earth-Age</button>
+            <br><br>
+            <button href="#" class="btn btn-primary" id="useDOB">Use Earth-DOB</button>
+            <br>
+            <br>
+
               <form id="userForm">
 
-                <div class="form-group">
+                <div class="form-group" id="dobInput">
                   <label for="dob">Date-of-Birth (Earth-Date)</label>
-                  <input type="date" class="form-control" id="dob" required>
+                  <input type="date" class="form-control" id="dob">
                 </div>
+
+                <div class="form-group" id="ageInput">
+                  <label for="age">Age (Earth-Years)</label>
+                  <input type="number" class="form-control" id="age">
+                </div>
+
 
                 <div class="form-group">
                   <label for="gender">Gender</label>
@@ -57,7 +69,6 @@
 
                 <button type="submit" name="button" class="btn btn-warning">Get Galactic Ages!</button>
               </form>
-            </div>
           </div>
         </div>
 
