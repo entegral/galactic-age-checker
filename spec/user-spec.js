@@ -51,8 +51,8 @@ describe ('DateChecker', function() {
 
   it('should calculate a person\'s life expectancy in mercurial years', function (){
     let planetaryYearModifier = 0.24;
-    expect(user1.calculateSpecificLifeExpectancy("mercury").toEqual(76*0.75*0.75/planetaryYearModifier);
-    expect(user2.calculateSpecificLifeExpectancy("mercury").toEqual((76+5)*1.1*1.1/planetaryYearModifier);
+    expect(user1.calculateSpecificLifeExpectancy("mercury")).toEqual(76*0.75*0.75/planetaryYearModifier);
+    expect(user2.calculateSpecificLifeExpectancy("mercury")).toEqual((76+5)*1.1*1.1/planetaryYearModifier);
   });
 
   it('should calculate a person\'s life expectancy in venusian years', function (){
