@@ -7,7 +7,6 @@ export class User {
       let newDate = new Date();
       let birthYear = newDate.getFullYear() - formInput.age;
       newDate.setFullYear(birthYear);
-      console.log(newDate.getFullYear());
       this.dob = newDate;
     }
 
