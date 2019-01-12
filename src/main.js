@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 
   $(".results").hide();
-  $("#ageInput").hide();
+  $("#dobInput").hide();
 
   $("#useAge").click(function(){
     $("#dobInput").slideUp();
